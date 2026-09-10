@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>웨이트 트레이닝 입문 가이드</title>
+  <meta name="description" content="웨이트 트레이닝을 처음 시작하는 사람을 위한 부위별 운동 가이드 — 가슴 · 등 · 어깨 · 팔 · 하체" />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- 배경 이미지 레이어 (뷰에 따라 교체) -->
+  <div class="bg-layer" id="bgLayer" aria-hidden="true"></div>
+  <div class="bg-scrim" aria-hidden="true"></div>
+
+  <div class="app">
+    <!-- 사이드바 -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__head">
+        <a class="brand" href="#/" data-link>
+          <span class="brand__mark">🏋️</span>
+          <span class="brand__text">
+            <strong>WEIGHT START</strong>
+            <small>웨이트 트레이닝 입문 가이드</small>
+          </span>
+        </a>
+        <button class="sidebar__close" id="sidebarClose" aria-label="사이드바 닫기">✕</button>
+      </div>
+
+      <div class="search">
+        <input
+          type="search"
+          id="searchInput"
+          class="search__input"
+          placeholder="운동 검색 (예: 스쿼트, 광배근, 덤벨)"
+          autocomplete="off"
+        />
+        <div class="search__results" id="searchResults" hidden></div>
+      </div>
+
+      <nav class="nav" id="nav" aria-label="부위별 운동"></nav>
+
+      <div class="sidebar__foot">
+        <a href="#/guide" data-link class="foot-link">📋 입문자 공통 가이드</a>
+        <p class="disclaimer">
+          일반적인 운동 정보입니다. 부상·질환이 있다면 전문가와 상담하세요.
+        </p>
+      </div>
+    </aside>
+
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- 본문 -->
+    <main class="main" id="main">
+      <header class="topbar">
+        <button class="topbar__menu" id="menuBtn" aria-label="메뉴 열기">☰</button>
+        <nav class="crumbs" id="crumbs" aria-label="현재 위치"></nav>
+      </header>
+      <section class="content" id="content"><!-- 라우팅으로 채워짐 --></section>
+      <footer class="sitefoot">
+        <span>웨이트 트레이닝 입문 가이드</span>
+        <span>·</span>
+        <span>사진: Unsplash</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
